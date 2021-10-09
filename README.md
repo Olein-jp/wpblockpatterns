@@ -1,15 +1,2 @@
-# My Snow Monkey
-
-子テーマの `functions.php` にカスタマイズコードを追加するように、このプラグインの `my-snow-monkey.php` に書くと、同じようにカスタマイズが反映されます。
-
-## 定数
-
-下記の定数が利用可能です。
-
-### MY_SNOW_MONKEY_URL
-
-My Snow Monkey プラグインディレクトリへの URL
-
-### MY_SNOW_MONKEY_PATH
-
-My Snow Monkey プラグインディレクトリへの ファイルパス
+# Plugin for Snow Monkey
+This repository is plugin for Snow Monkey which is Premium WordPress Theme. and working for customizing website of [wpblockpatterns.jp](https://wpblockpatterns.jp).
