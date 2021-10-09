@@ -1,11 +1,10 @@
 <?php
 /**
- * Plugin name: My Snow Monkey
- * Description: Olein Design 制作の My Snow Monkey
+ * Plugin name: BlockPatterns.jp Customize
+ * Description: wpblockpatterns.jp のカスタマイズ専用プラグイン
  * Version: 1.0.0
  *
- * @package my-snow-monkey
- * @author inc2734
+ * @author Olein-jp
  * @license GPL-2.0+
  */
 
