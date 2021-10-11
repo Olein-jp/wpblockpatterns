@@ -114,7 +114,7 @@ add_action(
 		?>
 		<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 		<h2>Code</h2>
-			<p>ソースコード右上のボタンをクリックするとソースコードをクリップボードにコピーすることができます。<br>また、<code><strong>Shift + ⌘ + V</strong></code>で<strong>スタイルを合わせて</strong>あなたのWordPress編集画面に<strong>ペースト</strong>することで同じものを用意することができます。</p>
+			<p class="has-lightest-grey-background-color has-background">ソースコード右上のボタンをクリックするとソースコードをクリップボードにコピーすることができます。<br><br>そして、<code><strong>Shift + ⌘ + V</strong></code>で<strong>スタイルを合わせて</strong>あなたのWordPress編集画面に<strong>ペースト</strong>することで同じものを用意することができます。</p>
 		<div class="hcb_wrap"><pre class="prism off-numbers lang-html" data-lang="HTML" data-show-lang="0"><code>
 					<?php echo $content; ?>
 		</code></pre></div>

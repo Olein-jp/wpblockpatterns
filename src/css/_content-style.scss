@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+    投稿・固定ページコンテンツ内共通部分
+--------------------------------------------------------------*/
+.p-entry-content > h1,
+.p-entry-content > h2,
+.p-entry-content > h3,
+.p-entry-content > h4 {
+  text-align: center;
+}
+
+.p-entry-content > h2,
+.p-entry-content > h3 {
+  background-color: #f4f4f4;
+  border: 1px solid #cccccc;
+  color: #666666;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
