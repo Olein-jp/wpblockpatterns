@@ -10,10 +10,13 @@ Breadcrumbs
 /**
 Non display author and published date
  */
-.c-entry-summary__meta,
-.c-meta__item--author,
-.c-meta__item--published {
-  display: none;
+.p-top-recently-block-patterns,
+.single-block-pattern .p-related-posts {
+  .c-entry-summary__meta,
+  .c-meta__item--author,
+  .c-meta__item--published {
+    display: none;
+  }
 }
 
 /**
@@ -103,7 +106,7 @@ Share buttons
 /**
 Top : Recently post slider
  */
-.p-top-recently-posts {
+.p-top-first-view-gallery {
   .c-entry-summary__term,
   .c-entry-summary__body {
     display: none;
