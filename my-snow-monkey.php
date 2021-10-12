@@ -37,14 +37,14 @@ add_action(
 	'wp_enqueue_scripts',
 	function() {
 		wp_enqueue_style(
-			'my-snow-monkey-style',
+			'wpblockpattern-style',
 			MY_SNOW_MONKEY_URL . '/build/css/style.css',
 			[ Framework\Helper::get_main_style_handle() ],
 			filemtime( plugin_dir_path( __FILE__ ) )
 		);
 
 //		wp_enqueue_script(
-//			'oleindesign-script',
+//			'wpblockpattern-script',
 //			MY_SNOW_MONKEY_URL . '/build/js/scripts.js',
 //			null,
 //			filemtime( plugin_dir_path( __FILE__ ) ),
@@ -93,7 +93,7 @@ add_action(
 			wpblockpatterns_output_related_custom_taxonomy();
 			echo $output_end;
 		?>
-		<h2>Block Pattern</h2>
+		<h2 class="alignwide">Block Pattern</h2>
 		<?php
 		}
 	}
@@ -113,11 +113,15 @@ add_action(
 			$content = trim( $content, '	' );
 		?>
 		<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
-		<h2>Code</h2>
+		<h2 class="alignwide">Code</h2>
 			<p class="has-lightest-grey-background-color has-background">ソースコード右上のボタンをクリックするとソースコードをクリップボードにコピーすることができます。<br><br>そして、<code><strong>Shift + ⌘ + V</strong></code>で<strong>スタイルを合わせて</strong>あなたのWordPress編集画面に<strong>ペースト</strong>することで同じものを用意することができます。</p>
-		<div class="hcb_wrap"><pre class="prism off-numbers lang-html" data-lang="HTML" data-show-lang="0"><code>
-					<?php echo $content; ?>
-		</code></pre></div>
+
+			<div class="hcb_wrap">
+				<pre class="prism off-numbers lang-html" data-lang="HTML" data-show-lang="0">
+					<code><?php echo $content; ?></code>
+				</pre>
+			</div>
+
 			<p class="has-lightest-grey-background-color has-background">You can copy the code by clicking on the button in the top right corner.<br>Then <strong>Paste and Match Style</strong> with <code><strong>Shift + ⌘ + V</strong></code> in your WordPress editor.</p>
 		<?php
 		}
