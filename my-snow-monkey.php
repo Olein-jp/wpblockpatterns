@@ -170,3 +170,15 @@ add_filter(
 		return $args;
 	}
 );
+
+/**
+ * deregister block style
+ */
+add_action(
+	'wp_enqueue_scripts',
+	function () {
+		wp_dequeue_style( 'snow-monkey-block-library' );
+		wp_deregister_style( 'snow-monkey-block-library' );
+	},
+	11
+);
