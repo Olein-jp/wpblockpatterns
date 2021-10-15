@@ -1,0 +1,229 @@
+/*--------------------------------------------------------------
+    CSS Variables
+--------------------------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+    Setup
+--------------------------------------------------------------*/
+:root {
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+* {
+  letter-spacing: inherit;
+}
+
+a {
+  text-underline-offset: .1em;
+  text-decoration-skip-ink: all;
+  text-decoration-style: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/*--------------------------------------------------------------
+    Element Base in single-block-pattern at content area
+--------------------------------------------------------------*/
+.single-block-pattern .p-entry-content {
+  /* Heading
+  ------------------------------*/
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1em;
+  }
+
+  /* Lists
+  ------------------------------*/
+  ul,
+  ol {
+    margin: calc(2 * 15px) 0 calc(2 * 15px) 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 1em;
+  }
+
+  li > ul,
+  li > ol {
+    margin-top: calc(0.5 * 15px);
+    margin-bottom: calc(0.5 * 15px);
+  }
+
+  dt,
+  dd {
+    line-height: 1.7;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  dt + dd {
+    margin-top: 5px;
+  }
+
+  dd + dt {
+    margin-top: 15px;
+  }
+
+  /* Media
+  ------------------------------*/
+  figure {
+    margin: 0;
+  }
+
+  iframe,
+  img,
+  embed,
+  object,
+  svg {
+    display: block;
+  }
+
+  iframe {
+    border: none;
+    max-width: 100%;
+  }
+
+  img,
+  embed,
+  object {
+    height: auto;
+    max-width: 100%;
+  }
+
+  figcaption {
+    color: inherit;
+    display: block;
+    font-size: 14px;
+    line-height: inherit;
+    margin-bottom: 0;
+    margin-top: calc(0.7 * 15px);
+    text-align: left;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  /* Quotes
+  ------------------------------*/
+  blockquote {
+    border-color: currentColor;
+    border-style: solid;
+    border-width: 0 0 0 2px;
+    margin: 0 0 1em 0;
+    padding: 0 0 0 15px;
+  }
+
+  cite {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    text-align: inherit;
+    text-transform: uppercase;
+  }
+
+  blockquote cite {
+    display: block;
+    margin-top: 15px;
+  }
+
+  @media (min-width: 782px) {
+
+    blockquote {
+      padding: 0 0 0 calc(2 * 15px);
+
+      cite {
+        margin-top: calc(1.5 * 15px);
+      }
+    }
+
+  }
+
+  /* Separator
+  ------------------------------*/
+  hr {
+    background-color: #082A40;
+    border: none !important;
+    height: 2px;
+    margin-top: calc(2 * 15px);
+    margin-bottom: calc(2 * 15px);
+    opacity: 1;
+  }
+
+  /* Tables
+  ------------------------------*/
+  table {
+    font-size: 14px;
+    margin: calc(2 * 15px) auto;
+
+    & * {
+      border-color: currentColor;
+      line-height: inherit;
+    }
+
+    thead,
+    tfoot {
+      border: none;
+    }
+  }
+
+  tr {
+    vertical-align: baseline;
+  }
+
+  th:not([class*="has-text-align-"]),
+  td:not([class*="has-text-align-"]) {
+    text-align: left;
+  }
+
+  th,
+  td {
+    border-style: solid;
+    border-width: 2px;
+    min-width: 50px;
+  }
+
+  th,
+  td,
+  caption {
+    padding: 15px;
+  }
+
+  caption {
+    background-color: #082A40;
+    color: white;
+    text-align: center;
+  }
+
+  /* code
+  ------------------------------*/
+  pre {
+    background-color: #082A40;
+    color: white;
+    font-size: 14px;
+    font-family: "ui-monospace, Menlo, Consolas, Monaco, " Liberation Mono ", " Lucida Console ", monospace";
+    line-height: 1.7;
+    padding: calc(1.5 * 15px);
+    white-space: pre-wrap;
+  }
+}
